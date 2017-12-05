@@ -14,3 +14,14 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$router->get('/foo', function (){
+    return 'Hello World';
+});
+//
+//
+//	$router->app->post('tweet', [
+//            'as' => 'tweet', 'uses' => 'TweetController@createTweet'
+// ]);
+//
+//        $url = route('tweet');
+//        return redirect()->route('tweet');
